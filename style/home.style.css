@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nomarginpadding {
+    padding: 0;
+    margin: 0;
+}
+
+#contents a {
+    font-family: 'Work Sans';
+    color: #2B2B2B;
+    text-decoration: none;
+    font-size: 30px;
+    
+    position: absolute;
+
+    transform: rotate(-90deg);
+    z-index: 100;
+
+    transition: color .2s ease-in-out;
+}
+
+#contents a:hover {
+    color: #838383;
+}
+
+#contents a#nav_upperleft {
+    top: 10vh;
+    left: 2vw;
+
+    animation: fly_in_upperleft;
+    animation-duration: 1s;
+}
+
+@keyframes fly_in_upperleft {
+    0% {left: -25vw;}
+    100% {left: 2vw;}
+}
+
+#contents a#nav_lowerleft {
+    bottom: 10vh;
+    left: 2vw;
+
+    animation: fly_in_lowerleft;
+    animation-duration: 1.5s;
+}
+
+@keyframes fly_in_lowerleft {
+    0% {left: -25vw;}
+    100% {left: 2vw;}
+}
+
+#contents a#nav_upperright {
+    top: 10vh;
+    right: 2vw;
+
+    animation: fly_in_upperright;
+    animation-duration: 1.5s;
+}
+
+@keyframes fly_in_upperright {
+    0% {right: 125vw;}
+    100% {right: 2vw;}
+}
+
+#contents a#nav_lowerright {
+    bottom: 10vh;
+    right: 2vw;
+
+    animation: fly_in_lowerright;
+    animation-duration: 1s;
+}
+
+@keyframes fly_in_lowerright {
+    0% {right: 100vw;}
+    100% {right: 2vw;}
+}
+
+#contents #homeheaders {
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    min-height: 50vh;
+    z-index: 999;
+
+    animation-name: fly_in_headers;
+    animation-duration: 1s;
+}
+
+#contents h1 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: #2B2B2B;
+    font-size: 40px;
+}
+
+#contents h3 {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: #656565;
+    font-size: 30px;
+    width: 25vw;
+}
+
+#contents img {
+    position: absolute;
+    height: 70vh;
+    top: 15vh;
+    right: 0;
+    z-index: 1;
+    animation-name: fly_in_img;
+    animation-duration: 1s;
+}
+
+@keyframes fly_in_img {
+    0% {top: -100vh;}
+    100%{top: 15vh;}
+}
+
+@keyframes fly_in_headers {
+    0% {top: -25vh;}
+    100% {top: 25%;}
+}
